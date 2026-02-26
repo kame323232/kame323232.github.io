@@ -3,11 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Examples - DNA Viewer</title>
+  <title>作例 | DNA Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.8; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .nav a { margin-right: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+    @media (min-width: 800px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Examples</h1>
-  <p>作例（PNG/SVGなど）をここに載せます。</p>
-  <p><a href="../">トップへ</a></p>
+  <div class="container">
+    <div class="nav">
+      <a href="../">トップ</a>
+      <a href="../app/">アプリ</a>
+      <a href="../help/">使い方</a>
+      <a href="../privacy.html">プライバシー</a>
+      <a href="../terms.html">利用規約</a>
+    </div>
+
+    <h1>作例</h1>
+    <p>このページでは、DNA Viewerで作成できる図の例を掲載します。</p>
+
+    <h2>作例の追加方法（初心者向け）</h2>
+    <ol>
+      <li>GitHubで <code>examples/assets/</code> フォルダを作り、その中に画像（PNG/SVG）をアップロードします。</li>
+      <li>このページで <code>&lt;img src="./assets/xxx.png"&gt;</code> のように参照すると表示できます。</li>
+    </ol>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Example 1（サンプル）</h3>
+        <!--
+          ここは後で実画像に差し替えます。
+          例：examples/assets/example1.png をアップしたら src を "./assets/example1.png" にする
+        -->
+        <p>画像をアップしたらここに表示されます。</p>
+      </div>
+
+      <div class="card">
+        <h3>Example 2（サンプル）</h3>
+        <p>画像をアップしたらここに表示されます。</p>
+      </div>
+    </div>
+
+    <p><a href="../">トップへ戻る</a></p>
+  </div>
 </body>
 </html>
