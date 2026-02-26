@@ -3,13 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Help - DNA Viewer</title>
+  <title>使い方 | DNA Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.8; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .nav a { margin-right: 12px; }
+    ol li { margin-bottom: 8px; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
+  </style>
 </head>
 <body>
-  <h1>Help</h1>
-  <p>使い方・FAQ をここに書きます。</p>
+  <div class="container">
+    <div class="nav">
+      <a href="../">トップ</a>
+      <a href="../app/">アプリ</a>
+      <a href="../examples/">作例</a>
+      <a href="../privacy.html">プライバシー</a>
+      <a href="../terms.html">利用規約</a>
+    </div>
 
-  <!-- ../ はトップ、../app/ はアプリへ -->
-  <p><a href="../">トップへ</a> / <a href="../app/">アプリへ</a></p>
+    <h1>使い方</h1>
+
+    <h2>基本手順</h2>
+    <ol>
+      <li>トップページから <a href="../app/">アプリ</a> を開きます。</li>
+      <li><strong>GenBank（.gb/.gbk）</strong> または <strong>FASTA（.fasta）</strong> を選択します（対応している形式のみ残してください）。</li>
+      <li>読み込み後、コンストラクト図が表示されます。</li>
+      <li>必要に応じて、要素の表示/非表示や配置を調整します（アプリ仕様に合わせて追記）。</li>
+      <li>画像として保存（PNG/SVG/PDFなど）します（対応している出力のみ残してください）。</li>
+    </ol>
+
+    <h2>FAQ</h2>
+    <h3>Q. データは外部に送信されますか？</h3>
+    <p>
+      <!-- 実装に合わせて正確に書いてください -->
+      A.（例）本ツールはブラウザ内で処理し、ファイル内容をサーバへ送信しません。
+    </p>
+
+    <h3>Q. 表示が崩れる／要素名が重なる</h3>
+    <p>
+      A.（例）表示倍率を変更する、ラベル位置を調整する、要素の表示を減らす、などを試してください。
+    </p>
+
+    <p><a href="../">トップへ戻る</a></p>
+  </div>
 </body>
+</html>
 </html>
